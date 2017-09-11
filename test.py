@@ -44,8 +44,9 @@ def test(f):
         print track.speedMinAvgMax()
     print "\n* End Tests!\n"
 
+# Agora so tes que comentar o anterior e centrarte neste trozo de codio aqui
+# ten coidado ca identacion, python e moi quisquilloso
 
-# Isto e o que buscas!
 #    max_delta = 300
 #    tempo = "tempo a buscar"
 #
