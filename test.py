@@ -22,6 +22,19 @@ import datetime
 import gpx
 
 
+
+
+# #############
+# Funcion noela
+# #############
+
+def noela(di, persoa="pedro"):
+    print("Noela di> %s %s." % (di, persoa))
+    # Outra forma
+    print("Noela repite> " + di + " " + persoa + ".")
+    print("Esta dito.")
+
+
 # ###############
 # Test Code !!!!!
 # ###############
@@ -77,5 +90,13 @@ def test(f):
 
 if __name__ == "__main__":
     test(sys.argv[1])
+
+    # Usamos a funcion noela
+    noela("Hola")
+    noela("Hello", "jose")
+
+    # Para usar a funcion esta, descomenta a seguinte liña e executa o programa: ./test.py  ruta.gpx  "olaaaaa"
+    #noela(sys.argv[2])
+
 
 #EOF
