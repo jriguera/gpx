@@ -59,11 +59,11 @@ def match(gpxdata, datetimes, tdelta, keep=True):
                     closed_point = point
                     closed_tragseg = index
             # closed_point.time
-            if min_tdiff > max_delta:
+            if min_tdiff > tdelta:
                 # Resetease todo para forzar a busqueda no seguinte punto
                 closed_tragseg = 0
                 tracksegs = []
-                print("* Erro: non se atopou un punto en <%s> con delta <%s>!", file=sys.stderr)
+                print("* Erro: non se atopou un punto en <%s> con delta <%s>!" % (dt, tdelta), file=sys.stderr)
                 if keep:
                     result.append((dt, None, None))
             else:
