@@ -124,7 +124,7 @@ def main(fgpx, fcsv, maxdiffseconds=300, utcdiffminutes=-120):
     gpxdata = read_gpx(fgpx)
     datetimes = read_datetimes(fcsv, tzdiff)
     resultado = match(gpxdata, datetimes, delta, True)
-    print_output(resultado, sys.stdout)
+    print_output(resultado, sys.stdout, ',', "%d/%m/%y,%H:%M:%S", "{lat},{lon},{time}", True)
 
 
 # O programa executase asi: ./match.py Track_2016-09-10-165617.gpx  proba.csv > saida.csv
